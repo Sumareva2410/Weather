@@ -1,0 +1,131 @@
+body{
+    background-image: url(./images/1679630315_bogatyr-club-p-fon-dlya-prezentatsii-pogoda-instagram-38.png)
+}
+.main{
+    width: 33.3%;    
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: lightgoldenrodyellow;
+    margin-top: 70px;
+}
+.header{
+    background-color: antiquewhite;
+    display: flex;
+    margin: auto;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    font-family: math;
+}
+.search{
+    background-color:lightgrey;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 0px 10px;
+    font-size: 30px;
+     border: 1px solid lightgray;
+     font-family: math;
+}
+.buttonSearch{
+    background-color: azure;
+    border-radius: 25px;
+    height: 50px;
+    width: 90px;
+    border: 1px solid lightgrey;
+    box-shadow: 10px 5px 5px lightgray;
+    margin: 10px;
+    position: relative;    
+    font-family: math;
+    font-size: 20px;
+    color: gray;
+}
+.city{
+    background-color: beige;
+}
+.img{
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather2{
+    background-color: rgb(223, 146, 146);
+
+}
+.weatherDay{
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    flex-flow: wrap ;
+    position: relative;
+    top: -50px;
+    font-family: math;
+    
+}
+.date{   
+    color: gray;    
+}
+.description{
+    font-size: 40px;
+    font-family: math;
+}
+.weatherHour{ 
+    display: flex;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 20px;  
+    justify-content: center;
+    flex-flow: wrap;   
+}
+
+.weatherNow{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   background-color: antiquewhite;
+   position: relative;
+    top: -50px;
+    font-family: math;
+}
+.temp{
+    font-size: 40px;
+    font-family: math;
+}
+.error{
+    background-color:lightgrey;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 0px 10px;
+     font-size: 30px;
+    border: 1px solid red;
+    margin-top: 17px;
+    font-family: math;
+}
+.label{
+    color: red;
+    font-family: math;
+}
+.input{
+    display: block;
+    text-align: center;
+    margin: 20px 20px 20px 0px;
+    width: 50%;
+    font-family: math;
+}
+.decor{
+    background-color: burlywood;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 50px;
+}
