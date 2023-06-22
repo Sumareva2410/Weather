@@ -16,8 +16,7 @@ buttonSearch.addEventListener('click',  function(){
   clearWeatherHour();
 if(search.value == ""){
   search.className="error"
-  label.innerHTML ="Введите название"
-  clearWeatherNow()
+  label.innerHTML ="Введите название"  
 }else{
   search.className='search';
   label.innerHTML = ''
@@ -46,10 +45,8 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${search.value}&units=
         element.insertAdjacentHTML("beforeend", `${this.img}<br/>`);
         element.insertAdjacentHTML("beforeend", `${this.temp}`);
         }}       
-      let hour = new Hour('<img src = "http://openweathermap.org/img/wn/' + list[i].weather[0].icon+'@2x.png"/>', Math.round(list[i].main.temp) + '&deg');
-      
-      hour.showStates1(weatherDay)
-        
+      let hour = new Hour('<img src = "http://openweathermap.org/img/wn/' + list[i].weather[0].icon+'@2x.png"/>', Math.round(list[i].main.temp) + '&deg');     
+      hour.showStates1(weatherDay)        
     }  
 
     for(let i=7; i < 32; i+=8){
@@ -66,10 +63,8 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${search.value}&units=
         }
     }
         let day = new Day(list[i].dt_txt, '<img src = "http://openweathermap.org/img/wn/' + list[i].weather[0].icon+'@2x.png"/>',  Math.round(list[i].main.temp) + '&deg', list[i].weather[0].main);        
-        day.showStates(weatherHour);
-       
-    }  
-    
+        day.showStates(weatherHour);       
+    }      
   })
    function clearWeatherDay() {
       document.getElementsByClassName('.weatherDay')
@@ -78,9 +73,5 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${search.value}&units=
     function clearWeatherHour() {
       document.getElementsByClassName('.weatherHour')
       weatherHour.innerHTML = '';
-    }
-    function clearWeatherNow() {
-      document.getElementsByClassName('.weatherHour')
-      weatherNow.innerHTML = '';
     }
 })
