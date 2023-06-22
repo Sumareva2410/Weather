@@ -1,5 +1,7 @@
 body{
-    background-image: url(./images/1679630315_bogatyr-club-p-fon-dlya-prezentatsii-pogoda-instagram-38.png)
+    background-image: url(./images/1679630315_bogatyr-club-p-fon-dlya-prezentatsii-pogoda-instagram-38.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .main{
     width: 33.3%;    
